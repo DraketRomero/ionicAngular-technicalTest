@@ -1,0 +1,14 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title> Loader images </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-button (click)="redirect()" color="secondary">Cargar imagenes</ion-button>
+  <div>
+    <div *ngIf="showLoader" style="display: flex; justify-content: center; margin-top: 20px;">
+      <ion-spinner name="crescent" style="display: ruby-text;"></ion-spinner>
+    </div>
+  </div>
+</ion-content>

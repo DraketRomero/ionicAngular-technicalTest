@@ -1,0 +1,15 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>images</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div *ngFor="let heroe of arayHeores()">
+    <div class="img">
+      <img [src]="'assets/images/' + heroe.name + '.webp'" alt="">
+    </div>
+
+    <p class="p">{{heroe.text}}</p>
+  </div>
+</ion-content>
